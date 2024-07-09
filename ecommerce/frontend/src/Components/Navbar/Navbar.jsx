@@ -20,8 +20,8 @@ const dropdown_toggle=(e)=>{
     return (
         <div className='navbar'>
             <div className="nav-logo">
-                <img src={logo} alt="logo" />
-                <p>N&N</p>
+                <img className='logo' src={logo} alt="logo" />
+               <p>UrbanCart</p>
             </div>
             <img className='nav-dropdown' onClick={dropdown_toggle} src={nav_dropdown} alt="" />
             <ul ref={menuRef} className="nav-menu">
@@ -44,7 +44,8 @@ const dropdown_toggle=(e)=>{
             </ul>
             <div className="nav-login-cart">
                   {localStorage.getItem('auth-token')
-                  ?<button onClick={()=>{localStorage.removeItem('auth-token');window.location.replace('/')}}>Logout</button>
+                  ?<button onClick={()=>{localStorage.removeItem('auth-token');
+                    window.location.replace('/')}}>Logout</button>
                 : <Link style={{textDecoration:'none'}} to='/login'><button>Login</button></Link>}
 
                

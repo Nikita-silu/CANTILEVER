@@ -6,6 +6,10 @@
     align-items: center;
 
 }
+.logo{
+    width: 80px;
+    height: 80px;
+}
 .nav-logo{
     display: flex;
     align-items: center;
@@ -85,9 +89,7 @@
     .navbar{
         padding: 12px 50px;
     }
-    .nav-logo img{
-        width: 40px;
-    }
+  
     .nav-logo p{
         font-size: 25px;
     }
